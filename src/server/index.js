@@ -10,7 +10,7 @@ const PORT = process.env.PORT ? process.env.PORT : 8080;
 const mongoose = require('mongoose');
 app.use(bodyParser.json());
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://127.0.0.1:27017/light-tech-test-db', { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true });
+//mongoose.connect('mongodb://127.0.0.1:27017/light-tech-test-db', { useNewUrlParser: true, useFindAndModify: false, useUnifiedTopology: true });
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
